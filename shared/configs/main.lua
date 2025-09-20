@@ -4,7 +4,7 @@ Config = {
     ---------------------------------------------------------------
 
     devMode = {
-        active  = false,      -- When active, you can restart the script while connected for testing (otherwise requires relog)
+        active  = true,      -- When active, you can restart the script while connected for testing (otherwise requires relog)
         command = 'WaterDev', -- Command to start the script functions
     },
     ---------------------------------------------------------------
@@ -14,13 +14,14 @@ Config = {
     -- Outsider Needs               = 3
     -- Fred Metabolism Paid v1.4    = 4
     -- Fred Metabolism Paid v2      = 5
-    -- RSD Metabolism Paid          = 6
-    -- NXT Metabolism Paid          = 7
-    -- Andrade Metabolism Paid      = 8
+    -- RSD Metabolism               = 6
+    -- NXT Metabolism               = 7
+    -- Andrade Metabolism           = 8
     -- FX-HUD                       = 9
     -- Mega Metabolism              = 10
-    -- POS-Metabolism Paid          = 11
+    -- POS-Metabolism               = 11
     -- BLN HUD                      = 12
+    -- SS-Metabolism                = 13
     app = 1,
     ---------------------------------------------------------------
 
@@ -75,6 +76,9 @@ Config = {
         health   = 50,  -- Default: 50 / Health lost per Interval
     },
     ---------------------------------------------------------------
+
+    -- Automatically seed the items table on resource start
+    autoSeedDatabase = true,
 
     -- Item Names from Database
     canteen      = 'canteen',
